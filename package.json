@@ -1,0 +1,18 @@
+{
+  "name": "vrt-backstopjs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {    
+    "init": "backstop init",
+    "reference": "backstop reference",
+    "diff": "backstop test",
+    "commit": "backstop approve"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "backstopjs": "^6.0.4"
+  }
+}

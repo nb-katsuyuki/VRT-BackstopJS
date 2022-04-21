@@ -1,0 +1,67 @@
+{
+  "id": "google",
+  "viewports": [
+    {
+      "label": "mobile",
+      "device": "iPhone 8",
+      "width": 375,
+      "height": 667
+    },
+    {
+      "label": "tablet",
+      "device": "iPad Mini",
+      "width": 768,
+      "height": 1024,
+      "deviceScaleFactor": 2.0,
+      "pageScaleFactor": 1.0,
+      "mobile": true,
+      "Mobile": true,
+      "hasTouch": true,
+      "userAgent": "Mozilla/5.0 (iPad; CPU OS 13_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) CriOS/87.0.4280.77 Mobile/15E148 Safari/604.1"
+    },
+    {
+        "label": "pc",
+        "width": 1920,
+        "height": 1080
+    }
+  ],
+  "onBeforeScript": "puppet/onBefore.js",
+  "onReadyScript": "puppet/onReady.js",
+  "scenarios": [
+    {
+      "label": "search",
+      "cookiePath": "backstop_data/engine_scripts/cookies.json",
+      "url": "https://www.google.com/search?q=google",
+      "referenceUrl": "https://www.google.com/search?q=%E3%82%B0%E3%83%BC%E3%82%B0%E3%83%AB",
+      "readyEvent": "",
+      "readySelector": "",
+      "delay": 0,
+      "hideSelectors": [],
+      "removeSelectors": [],
+      "hoverSelector": "",
+      "clickSelector": "",
+      "postInteractionWait": 0,
+      "selectors": [],
+      "selectorExpansion": true,
+      "expect": 0,
+      "misMatchThreshold" : 0.1,
+      "requireSameDimensions": true
+    }
+  ],
+  "paths": {
+    "bitmaps_reference": "backstop_data/bitmaps_reference",
+    "bitmaps_test": "backstop_data/bitmaps_test",
+    "engine_scripts": "backstop_data/engine_scripts",
+    "html_report": "backstop_data/html_report",
+    "ci_report": "backstop_data/ci_report"
+  },
+  "report": ["browser"],
+  "engine": "puppeteer",
+  "engineOptions": {
+    "args": ["--no-sandbox"]
+  },
+  "asyncCaptureLimit": 5,
+  "asyncCompareLimit": 50,
+  "debug": false,
+  "debugWindow": false
+}
