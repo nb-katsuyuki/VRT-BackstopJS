@@ -204,7 +204,7 @@ A. [backstop_data/html_report](backstop_data/html_report/)にあります。
 
 Q. ディスクを圧迫するのだけど
 
-A. [backstop_data/bitmaps_test](backstop_data/bitmaps_test/)はいつ消してしまって大丈夫。
+A. [backstop_data/bitmaps_test](backstop_data/bitmaps_test/)は、キャプチャが貯まるので、古いものなど消してしまって大丈夫です。
 
 ---
 
