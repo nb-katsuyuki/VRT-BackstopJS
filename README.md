@@ -68,7 +68,7 @@ $ npm install
 
 * 設定
 
-設定ファイル [backstop.json](backstop.json)
+設定ファイル [backstop.json](backstop.json#L34-35)
 
 確認したいURLを指定
 ```json
@@ -103,13 +103,13 @@ $ npm run commit
 
 Q. 違うデバイスや画面サイズを指定したい。
 
-A. [devices](https://github.com/puppeteer/puppeteer/blob/main/src/common/DeviceDescriptors.ts)を参照して[ここ](backstop.json)のviewで指定。
+A. [devices](https://github.com/puppeteer/puppeteer/blob/main/src/common/DeviceDescriptors.ts)を参照して[ここ](backstop.json#L6)のdeviceで指定。
 
 ---
 
 Q. 複数の画面もチェックしたい。
 
-A. 設定ファイル [backstop.json](backstop.json)の`scenarios`に設定を増やせばOK
+A. 設定ファイル [backstop.json](backstop.json#L30-L50)の`scenarios`に設定を増やせばOK
 
 ```json
    "scenarios": [
@@ -137,7 +137,7 @@ A. 設定ファイル [backstop.json](backstop.json)の`scenarios`に設定を�
 
 Q. 画面に動的な部分(広告)などは差分を出したくない。
 
-A.  設定ファイル [backstop.json](backstop.json)の`scenarios`に`hideSelectors`や`removeSelectors`がありますので、対象セレクタを指定します。
+A.  設定ファイル [backstop.json](backstop.json#L39-L40)の`scenarios`に`hideSelectors`や`removeSelectors`がありますので、対象セレクタを指定します。
 
 ```json
 39:      "hideSelectors": [".hideClassName","#hideId"],
@@ -151,7 +151,7 @@ Q. jsよりrubyが得意なんだけど。puppeterを使いたくない。
 
 A. puppeterではなく、playwrightも使用できます。
 
-[backstop.json](backstop.json)
+[backstop.json](backstop.json#L59)
 
 ↓を書き換え
 
@@ -162,7 +162,7 @@ A. puppeterではなく、playwrightも使用できます。
 ※このリポジトリではdeviceやlayzyloadなどはpuppeteerにしか対応していません。
 
 
-他にも[casper](https://github.com/casperjs/casperjs)や[chromy][https://github.com/OnetapInc/chromy]を導入することもできます。
+他にも[casper](https://github.com/casperjs/casperjs)や[chromy](https://github.com/OnetapInc/chromy)を導入することもできます。
 
 ググると幸せが訪れると思います。
 
@@ -172,13 +172,13 @@ Q. 画像が表示されない。デザインが崩れる。
 
 A. リソースのロードに時間がかかっているのかも。ディレイなどをれてみると解決するかも。
 
-[backstop.json](backstop.json)
+[backstop.json](backstop.json#L38)
 
 ```
 38:       "delay": 0,
 ```
 
-[onReady.j](backstop_data/engine_scripts/puppet/onReady.js)
+[onReady.j](backstop_data/engine_scripts/puppet/onReady.js#L23)
 
 ```
 23:  await page.waitForTimeout(1000);
