@@ -2,9 +2,9 @@
 
 Visual Regression Testing by BackstopJS
 
+↓「google」と「グーグル」で検索した時の差分。
 ![screenshot1](./doc/screenshot1.png)
 ![screenshot2](./doc/screenshot2.png)
-
 
 ***thanks***
 
